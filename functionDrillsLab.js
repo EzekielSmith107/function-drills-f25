@@ -284,7 +284,11 @@ let sampleString = "Hi, my name is Kylo."
 */
 
 //CODE HERE
+function string2(greeting){
+  console.log(String(greeting.toUpperCase()));
+}
 
+string2(sampleString);
 
 ////////////////// PROBLEM 18 ////////////////////
 /*
@@ -296,6 +300,15 @@ let sampleString = "Hi, my name is Kylo."
   If it does, return 'email verified' and if doesn't, 
   return 'must provide a valid email address'
 */
+
+function emailCheck(email){
+  let emailString = String(email).trim();
+  if(emailString.includes("@")){
+    console.log("email verified")
+  } else {
+    console.log("must provide a valid email address");
+  }
+}
 
 ////////////////// PROBLEM 19 ////////////////////
 /*
