@@ -178,7 +178,19 @@ let nameGreeting = nameCheck("Ezekiel");
 */
 
 //CODE HERE
+function faveColorFinder(color){
+  if(color === 'red'){
+    console.log('red is a great color')
+  } else if(color === 'green'){
+    console.log('green is a solid favorite color')
+  } else if(color === 'black'){
+    console.log('so trendy')
+  } else {
+    console.log('you need to evaluate your favorite color choice')
+  }
+}
 
+let colorRating = faveColorFinder('yellow');
 
 ////////////////// PROBLEM 12 ////////////////////
 let namesArr = ['Cameron', 'Riley', 'Eric', 'Brenna', 'Karl']
@@ -189,7 +201,13 @@ let namesArr = ['Cameron', 'Riley', 'Eric', 'Brenna', 'Karl']
 */
 
 //CODE HERE
+const printAllNames = (arrayOfNames) => {
+  for(i = 0; i < arrayOfNames.length; i++){
+    console.log(arrayOfNames[i]);
+  }
+}
 
+printAllNames(namesArr);
 
 ////////////////// PROBLEM 13 ////////////////////
 /*
@@ -200,7 +218,15 @@ let namesArr = ['Cameron', 'Riley', 'Eric', 'Brenna', 'Karl']
 */
 
 //CODE HERE
+const thatsOdd = function(aNumber){
+  if(aNumber % 2 === 0){
+    console.log("That's not odd!");
+  } else {
+    console.log("That is odd indeed!")
+  }
+}
 
+let oddChecker = thatsOdd(13);
 
 ////////////////// PROBLEM 14 ////////////////////
 
@@ -213,7 +239,7 @@ let namesArr = ['Cameron', 'Riley', 'Eric', 'Brenna', 'Karl']
 */
 
 //CODE HERE
-
+const bestMovie = (movieTitle) => `${movieTitle} is the best movie ever!`
 
 ////////////////// PROBLEM 15 ////////////////////
 let bigOrSmallArray = [1,101, 102, 2, 103, 4, 5, 6, 107]
@@ -227,7 +253,17 @@ let bigOrSmallArray = [1,101, 102, 2, 103, 4, 5, 6, 107]
 */
 
 //CODE HERE
-
+function bigOrSmall(arr){
+  let answers = []
+  for(i = 0; i < arr.length; i++){
+    if(arr[i] > 100){
+      answers.push("big");
+    } else {
+      answers.push("small");
+    }
+  }
+  let arrayEvaluator = answers;
+}
 
 ////////////////// PROBLEM 16 ////////////////////
 let contestants = ['Katniss', 'Peeta', 'Fox-face', 'Glimmer', 'Cato', 'Rue', 'Thresh', 'Clove', 'Marvel']
