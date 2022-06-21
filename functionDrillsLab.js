@@ -12,7 +12,11 @@
 */
 
 //CODE HERE
+function helloWorld(){
+  console.log('Hello, World!');
+}
 
+helloWorld();
 
 ////////////////// PROBLEM 2 ////////////////////
 
@@ -21,7 +25,7 @@
 */
 
 //CODE HERE
-
+const jsNinja = () => 'I am a JavaScript ninja!';
 
 ////////////////// PROBLEM 3 ////////////////////
 /*
@@ -31,7 +35,11 @@
 */
 
 //CODE HERE
+function printName(name1){
+  console.log(name1);
+}
 
+printName('Ezekiel');
 
 ////////////////// PROBLEM 4 ////////////////////
 /*
@@ -44,7 +52,11 @@
 */
 
 //CODE HERE
+function greeting(name){
+  console.log(`Hello, ${name}`);
+}
 
+greeting('Ezekiel');
 
 ////////////////// PROBLEM 5 ////////////////////
 
@@ -58,7 +70,7 @@
 */
 
 //CODE HERE
-
+const compareNums = (num1, num2) => num1 >= num2 ? num1 : num2;
 
 ////////////////// PROBLEM 6 ////////////////////
 /*
@@ -69,7 +81,13 @@
 */
 
 //CODE HERE
+function add(number1, number2){
+  const number1Num = Number(number1);
+  const number2Num = Number(number2);
+  return number1Num + number2Num;
+}
 
+sum = add('7', 6);
 
 ////////////////// PROBLEM 7 ////////////////////
 
@@ -84,7 +102,7 @@ const exclaim = function(str) {
 
 // console.log('arrow')
 // console.log('declaration')
-// console.log('expression')
+console.log('expression')
 
 
 
@@ -99,7 +117,7 @@ const exclaimTwo = str => {
   return str.toUpperCase() + '!!!'
 }
 
-// console.log('arrow')
+console.log('arrow')
 // console.log('declaration')
 // console.log('expression')
 
@@ -109,8 +127,7 @@ const exclaimTwo = str => {
 
   Brownie points if you use a template string
 */
-
-
+const exclaimThree = (str) => `${str.toUpperCase()}!!!`
 
 ////////////////// PROBLEM 9 ////////////////////
 
@@ -124,7 +141,7 @@ function exclaimFour(str) {
 }
 
 // console.log('arrow')
-// console.log('declaration')
+console.log('declaration')
 // console.log('expression')
 
 
@@ -138,7 +155,17 @@ function exclaimFour(str) {
 */
 
 //CODE HERE
+function nameCheck(NAMEPARAM){
+  if(NAMEPARAM === "Steven"){
+    console.log("What is up Steven?")
+  } else if(NAMEPARAM === "Bryan"){
+    console.log("Hey Bryan!")
+  } else {
+    console.log(`Cool name, ${NAMEPARAM}`)
+  }
+}
 
+let nameGreeting = nameCheck("Ezekiel");
 
 ////////////////// PROBLEM 11 ////////////////////
 /*
