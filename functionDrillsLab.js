@@ -274,7 +274,13 @@ let loser = 'Glimmer'
 */
 
 //CODE HERE
-
+function theEliminator(people, person){
+  for(let i = 0; i < contestants.length; i++){
+    if(people[i] === person){
+      contestants.splice(i, 1);
+    }
+  } return contestants;
+}
 
 ////////////////// PROBLEM 17 ////////////////////
 let sampleString = "Hi, my name is Kylo."
@@ -317,7 +323,12 @@ function emailCheck(email){
 */
 
 //CODE HERE
+function fantasyMerchant(gold){
+  let totalFrogs = Math.floor(gold/3)
+  return totalFrogs
+}
 
+let totalFrogs = console.log(fantasyMerchant(22));
 
 ////////////////// PROBLEM 20 ////////////////////
 /*
@@ -325,7 +336,12 @@ function emailCheck(email){
 */
 
 //CODE HERE
+function fantasyMerchant2(gold){
+  let totalFrogs2 = Math.floor(gold/3)
+  return totalFrogs2
+}
 
+let totalFrogs2 = console.log(fantasyMerchant2(88));
 
 ////////////////// PROBLEM 21 ////////////////////
 let sampleArray = [0,1,2,3,4,7,5,6,8,9]
@@ -334,7 +350,16 @@ let sampleArray = [0,1,2,3,4,7,5,6,8,9]
 */
 
 //CODE HERE
+function ascendingCheck(array1){
+  for(let i = 0; i < array1.length; i++){
+    if(array1[i] > array1[i + 1] || array1[i] !== array1[i + 1]){
+      return false;
+    }
+  } 
+  return true;
+}
 
+let arrayIsAscending = console.log(ascendingCheck(sampleArray));
 
 ////////////////// PROBLEM 22 ////////////////////
 
@@ -358,13 +383,13 @@ function pond() {
 */
 
 //This array should contain the variable names (as strings) accessible in the global scope.
-let globalScope = []
+let globalScope = [duck]
 
 //This array should contain the variable names (as strings) accessible in the bathroom function.
-let bathroomScope = []
+let bathroomScope = [duck, rubberDuck]
 
 //This array should contain the variable names (as strings) accessible in the bathtub function.
-let bathtubScope = []
+let bathtubScope = [duck, rubberDuck, sailorDuck]
 
 //This array should contain the variable names (as strings) accessible in the pond function.
-let pondScope = []
+let pondScope = [duck, realDuck]
